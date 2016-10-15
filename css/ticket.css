@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-08-29 09:47:50
+ * @version $Id$
+ */
+.ticket-list{margin-right: -18px;*overflow: hidden;*zoom:1;*padding-bottom: 20px;}
+.ticket-list dl{float: left;width: 321px;height: 330px;background: #e5e5e5;margin:0 18px 20px 0;position: relative;}
+.ticket-list dl.active{background: #fff;}
+.ticket-list dl.free{width:490px;height: 231px;}
+.ticket-list dt{font-size: 29px;color: #000;text-align: center;line-height: 59px;margin-top: 14px;}
+.ticket-list dt strong{font-size: 19px;color: #ff1200;}
+.ticket-list .explain{padding: 0 14px 0 19px;height:98px;}
+.ticket-list .explain2{height:115px;}
+.ticket-list dl.free .explain{text-align: center;padding: 0;height: 43px;}
+.ticket-list .explain h3{font-size: 18px;color: #3d3d3e;line-height: 24px;}
+.ticket-list .explain p{font-size:14px;color: #636363;line-height: 19px;}
+.ticket-list .ticket-price{width:250px;height: 54px;line-height: 54px;border:1px solid #ea1111;font-size: 38px;color: #ea0202;text-align: center;margin:0 auto; display: block;}
+.ticket-list .ticket-price.active{text-decoration: none;background: #f00;color: #fff;font-size: 31px; }
+.ticket-list .benefit{padding-left: 34px;}
+.ticket-list dl.free .benefit{padding-left: 0;text-align: center;}
+.ticket-list .benefit p{font-size: 14px;line-height: 20px;color: #2c2b2b;}
+.ticket-list .benefit span,.ticket-list .benefit em{color: #ea0202;}
+.ticket-list .benefit em{font-size:19px;}
+.ticket-list dl .mark,.ticket-list dl .mark-free{ position: absolute;width:112px;height: 109px;right:-18px;top:-7px; }
+.ticket-list dl .mark{background:url(http://www.ofweek.com/seminar/2016/high_tech/images/mark1.png) 0 0 no-repeat;}
+.ticket-list dl .mark-free{background:url(http://www.ofweek.com/seminar/2016/high_tech/images/mark_free.png) 0 0 no-repeat;}
+.ticket-list dl .origin-price{font-size: 22px;text-align: center;color:#f00; text-decoration:line-through;}
+.ticket-list dl .origin-price span{color:#2a2929;}
+
+/*浮窗*/
+.right-ad{
+	top:70px;
+	right:0;
+	width:176px;
+	height:172px;
+	position:fixed;
+	_position:absolute;
+    _top: expression(eval(document.documentElement.scrollTop));
+	_margin-top:150px;
+	z-index: 1111;
+}
+
+.fuchuang
+{
+	top:440px;
+	margin-top:-49px;
+	right:0;
+	width:132px;
+	height:99px;
+	background: url(http://www.ofweek.com/seminar/2016/high_tech/images/fuchuang.png) no-repeat center top;
+	position:fixed;
+	_position:absolute;
+    _top: expression(eval(document.documentElement.scrollTop));
+	_margin-top:150px;
+	display: none;
+	z-index: 1111;
+}
+
+.fuchuang .fuchuang_bm,.fuchuang .fuchuang_share
+{
+	width:132px;
+	height:49px;
+	display:block;
+	cursor:pointer;
+}
+
+.ticket-form{width:762px;padding-bottom:96px;}
+.ticket-table{border-collapse: collapse;width:762px;}
+.ticket-table td{border-bottom:1px solid #18464e;border-right:1px solid #18464e;font-family: '黑体',microsoft Yahei; font-size: 14px;line-height: 36px; color:#fff;text-align: center;}
+.ticket-table .tab-hd td{font-size: 16px;border: none;border-bottom:1px solid #18464e;}
+.ticket-table .td-tname{border-left:none;text-align: left;padding-left: 11px;}
+.ticket-table .td-tname-hd{padding-left:23px;}
+.ticket-table .td-num,.ticket-table .noborder{border-right:none;}
+.ticket-table .zhe{color:#ff1d1d;font-size: 24px;font-style: italic;margin-right: 3px;}
+.ticket-table .tips{color:#29c2dc;font-size: 12px;float: left;}
+.tname,.fname{ float: left; cursor: pointer;position: relative;}
+.tname .ico-explain,.fname .ico-explain{display: inline-block;background: url(../images/ico_explain.png) 0 0 no-repeat;width:12px;height:12px;margin-left: -2px;}
+.ticket-table .dashed{border-bottom-style: dashed;}
+
+.num-opera{height: 18px;line-height: 18px;padding-left: 32px;}
+.num-opera span{background: url(../images/num_opera.png) 0 0 no-repeat;display: inline-block;width:13px;height: 13px;cursor: pointer;float: left;margin: 2px 5px 0;}
+.num-opera .add{background-position: 0 -26px;}
+.num-opera .cut{background-position: 0 0;}
+.num-opera .cut.active{background-position: 0 -13px;}
+.num-opera input{width:77px;height: 16px; line-height: 16px\9; border:1px solid #18424a;border-radius: 3px;background: #111;outline: none;font-size: 14px;color:#fff;text-align: center; overflow: hidden;float: left;}
+.ticket-form .total{font-size: 22px;color:#ed0707;line-height: 46px;margin-top: 18px;text-align: right;}
+.ticket-form .btns{text-align: right;}
+.rdo{display: inline-block;background: url(../images/radio.png) 0 0 no-repeat;width:10px; height: 11px;margin-right: 3px;}
+.rdo.active{background-image: url(../images/radio_check.png)}
+.chk{display: inline-block;background: url(../images/check.png) 0 0 no-repeat;width:12px; height: 12px;margin-right: 3px;}
+.chk.active{background-image: url(../images/checked.png)}
+
+.ticket-table .explain{border:1px solid #13b5b1;position: absolute;width:230px;background: #1b1b1b;top: 33px;z-index: 1;line-height: 16px;color:#fff;font-family: microsoft Yahei;font-size: 12px;padding:5px 10px;}
+.ticket-table .explain h4{color:#29c2dc;margin-bottom: 3px;}
+.ticket-table .explain .up{position:absolute;top: -8px;left: 17px;background: url(../images/up.png) 0 0 no-repeat;width:16px; height: 16px;}
+
+
+
+
+
+
+
+.sub-btn{background: #999;color:#fff;border-color: #999;}
+.sub-btn.active{background: #0d334e;color:#29c2dc;border-color: #18464e;}
+
+
+
+
+
+/*weixin*/
+.weixin-box{text-align: center;margin-top: 114px;}
+.weixin-box dt{}
+.weixin-box dd{font-size: 13px;color:#fff;line-height: 17px;margin:4px 0 33px 0;}
